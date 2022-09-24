@@ -1,123 +1,135 @@
 /**
- * rofi -dump-theme output.
- * Rofi version: 1.7.5
+ * rofi monokaish theme
  **/
+
 * {
-    text-color:       rgba ( 208, 208, 208, 100 % );
-    urgentcolor:      rgba ( 249, 38, 114, 100 % );
-    fgwhite:          rgba ( 208, 208, 208, 100 % );
-    blackwidget:      rgba ( 34, 34, 34, 100 % );
-    blackdarkest:     rgba ( 34, 34, 34, 100 % );
-    blackselect:      rgba ( 85, 85, 85, 100 % );
-    darkgray:         rgba ( 85, 85, 85, 100 % );
-    background-color: rgba ( 34, 34, 34, 100 % );
+    colorPink:         rgba ( 249, 38, 114, 100 % );
+    colorWhite:        rgba ( 208, 208, 208, 100 % );
+    colorBlue:         rgba ( 78, 180, 250, 100 % );
+    colorBackground:   rgba ( 34, 34, 34, 100 % );
+    colorAutocomplete: rgba ( 85, 85, 85, 100 % );
+
+    text-color:       @colorWhite;
+    urgentcolor:      @colorPink;
+    fgwhite:          @colorWhite;
+    blackwidget:      @colorBackground;
+    blackdarkest:     @colorBackground;
+    blackselect:      @colorAutocomplete;
+    darkgray:         @colorAutocomplete;
+    background-color: @colorBackground;
     font:             "FiraCode 12";
-    highlight:        bold rgba ( 78, 180, 250, 100 % );
-    maincolor:        rgba ( 78, 180, 250, 100 % );
-    blackentry:       rgba ( 34, 34, 34, 100 % );
+    highlight:        @colorBlue;
+    maincolor:        @colorBlue;
+    blackentry:       @colorBackground;
 }
 button {
-    background-color: rgba ( 34, 34, 34, 100 % );
-    text-color:       rgba ( 85, 85, 85, 100 % );
+    background-color: @colorBackground;
+    text-color:       @colorAutocomplete;
 }
 button selected {
-    text-color: rgba ( 78, 180, 250, 100 % );
+    text-color: @colorBlue;
 }
 case-indicator {
     padding:          6px 10px ;
-    background-color: rgba ( 34, 34, 34, 100 % );
-    text-color:       rgba ( 78, 180, 250, 100 % );
+    background-color: @colorBackground;
+    text-color:       @colorBlue;
 }
 element {
     padding: 2px 15px ;
+    text-color:       @colorWhite;
 }
 element alternate.active {
-    background-color: rgba ( 34, 34, 34, 100 % );
-    text-color:       rgba ( 78, 180, 250, 100 % );
+    background-color: @colorBackground;
+    text-color:       @colorBlue;
 }
 element alternate.normal {
-    background-color: rgba ( 34, 34, 34, 100 % );
-    text-color:       rgba ( 208, 208, 208, 100 % );
+    background-color: @colorBackground;
+    text-color:       @colorWhite;
 }
 element alternate.urgent {
-    background-color: rgba ( 34, 34, 34, 100 % );
-    text-color:       rgba ( 249, 38, 114, 100 % );
+    background-color: @colorBackground;
+    text-color:       @colorPink;
 }
 element normal.active {
-    background-color: rgba ( 34, 34, 34, 100 % );
-    text-color:       rgba ( 78, 180, 250, 100 % );
+    background-color: @colorBackground;
+    text-color:       @colorBlue;
 }
 element normal.normal {
     padding:          0px 15px ;
-    background-color: rgba ( 34, 34, 34, 100 % );
-    text-color:       rgba ( 208, 208, 208, 100 % );
+    background-color: @colorBackground;
+    text-color:       @colorWhite;
 }
 element normal.urgent {
-    background-color: rgba ( 34, 34, 34, 100 % );
-    text-color:       rgba ( 249, 38, 114, 100 % );
+    background-color: @colorBackground;
+    text-color:       @colorPink;
 }
 element selected.active {
-    background-color: rgba ( 78, 180, 250, 100 % );
-    text-color:       rgba ( 34, 34, 34, 100 % );
+    background-color: @colorBlue;
+    text-color:       @colorWhite;
 }
 element selected.normal {
-    background-color: rgba ( 85, 85, 85, 100 % );
-    text-color:       rgba ( 208, 208, 208, 100 % );
+    background-color: @colorAutocomplete;
+    text-color:       @colorWhite;
 }
 element selected.urgent {
-    background-color: rgba ( 249, 38, 114, 100 % );
-    text-color:       rgba ( 34, 34, 34, 100 % );
+    background-color: @colorPink;
+    text-color:       @colorWhite;
 }
 entry {
     padding:          6px 10px ;
-    background-color: rgba ( 34, 34, 34, 100 % );
-    text-color:       rgba ( 208, 208, 208, 100 % );
+    background-color: @colorBackground;
+    text-color:       @colorWhite;
 }
 inputbar {
-    background-color: rgba ( 34, 34, 34, 100 % );
+    background-color: @colorBackground;
     spacing:          0px ;
+    text-color:       @colorWhite;
 }
 listview {
     padding:      1px 0px 0px ;
-    background:   rgba ( 34, 34, 34, 100 % );
+    background:   @colorBackground;
     dynamic:      true;
     scrollbar:    false;
     margin:       0px 0px 1px ;
     spacing:      0px ;
     fixed-height: false;
+    text-color:   @colorWhite;
 }
 mainbox {
-    background-color: rgba ( 34, 34, 34, 100 % );
+    background-color: @colorBackground;
     spacing:          0px ;
     children:         [ "inputbar","message","mode-switcher","listview" ];
+    text-color:       @colorWhite;
 }
 message {
     padding:          6px 10px ;
-    background-color: rgba ( 34, 34, 34, 100 % );
+    background-color: @colorBackground;
+    text-color:       @colorWhite;
 }
 mode-switcher {
-    background-color: rgba ( 34, 34, 34, 100 % );
+    background-color: @colorBackground;
 }
 prompt {
     padding:          6px 9px ;
-    background-color: rgba ( 78, 180, 250, 100 % );
-    text-color:       rgba ( 34, 34, 34, 100 % );
+    background-color: @colorBlue;
+    text-color:       @colorBackground;
 }
 scrollbar {
-    background-color: rgba ( 34, 34, 34, 100 % );
+    background-color: @colorBackground;
     handle-width:     15px ;
-    handle-color:     rgba ( 85, 85, 85, 100 % );
+    handle-color:     @colorAutocomplete;    
 }
 textbox {
-    background-color: rgba ( 34, 34, 34, 100 % );
-    text-color:       rgba ( 85, 85, 85, 100 % );
+    background-color: @colorBackground;
+    text-color:       @colorWhite;
 }
 window {
     padding:          4px ;
-    background-color: rgba ( 34, 34, 34, 100 % );
+    background-color: @colorBackground;
     anchor:           north;
     location:         north;
-    border-color:     rgba ( 78, 180, 250, 100 % );
+    border-color:     @colorBlue;
     y-offset:         20.0000% ;
     border:           3px ;
+    text-color:       @colorWhite;
 }
