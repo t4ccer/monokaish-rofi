@@ -1,0 +1,46 @@
+* =monokaish-rofi=
+
+Monokaish theme for rofi
+
+** Installation
+
+*** Without home-manager
+
+Copy =monokaish.rasi= to =~/.local/share/rofi/themes=
+
+*** With home-manager
+
+**** With flakes
+
+Add =monokaish-rofi= to your inputs
+
+#+begin_src nix
+  inputs.monokaish-rofi = {
+    url = "github:t4ccer/monokaish-rofi";
+    flake = false;
+  };
+#+end_src
+
+Configure =rofi= to use theme
+
+  #+begin_src nix
+  programs.rofi = {
+    enable = true;
+    theme = "${inputs.monokaish-rofi}/monokaish.rasi";
+  };
+#+end_src
+
+  
+  
+
+
+
+** License
+
+Copyright (C) 2022 Tomasz Maciosowski (t4ccer)
+
+This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with this program. If not, see http://www.gnu.org/licenses/.

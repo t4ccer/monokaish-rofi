@@ -1,0 +1,123 @@
+/**
+ * rofi -dump-theme output.
+ * Rofi version: 1.7.5
+ **/
+* {
+    text-color:       rgba ( 208, 208, 208, 100 % );
+    urgentcolor:      rgba ( 249, 38, 114, 100 % );
+    fgwhite:          rgba ( 208, 208, 208, 100 % );
+    blackwidget:      rgba ( 34, 34, 34, 100 % );
+    blackdarkest:     rgba ( 34, 34, 34, 100 % );
+    blackselect:      rgba ( 85, 85, 85, 100 % );
+    darkgray:         rgba ( 85, 85, 85, 100 % );
+    background-color: rgba ( 34, 34, 34, 100 % );
+    font:             "FiraCode 12";
+    highlight:        bold rgba ( 78, 180, 250, 100 % );
+    maincolor:        rgba ( 78, 180, 250, 100 % );
+    blackentry:       rgba ( 34, 34, 34, 100 % );
+}
+button {
+    background-color: rgba ( 34, 34, 34, 100 % );
+    text-color:       rgba ( 85, 85, 85, 100 % );
+}
+button selected {
+    text-color: rgba ( 78, 180, 250, 100 % );
+}
+case-indicator {
+    padding:          6px 10px ;
+    background-color: rgba ( 34, 34, 34, 100 % );
+    text-color:       rgba ( 78, 180, 250, 100 % );
+}
+element {
+    padding: 2px 15px ;
+}
+element alternate.active {
+    background-color: rgba ( 34, 34, 34, 100 % );
+    text-color:       rgba ( 78, 180, 250, 100 % );
+}
+element alternate.normal {
+    background-color: rgba ( 34, 34, 34, 100 % );
+    text-color:       rgba ( 208, 208, 208, 100 % );
+}
+element alternate.urgent {
+    background-color: rgba ( 34, 34, 34, 100 % );
+    text-color:       rgba ( 249, 38, 114, 100 % );
+}
+element normal.active {
+    background-color: rgba ( 34, 34, 34, 100 % );
+    text-color:       rgba ( 78, 180, 250, 100 % );
+}
+element normal.normal {
+    padding:          0px 15px ;
+    background-color: rgba ( 34, 34, 34, 100 % );
+    text-color:       rgba ( 208, 208, 208, 100 % );
+}
+element normal.urgent {
+    background-color: rgba ( 34, 34, 34, 100 % );
+    text-color:       rgba ( 249, 38, 114, 100 % );
+}
+element selected.active {
+    background-color: rgba ( 78, 180, 250, 100 % );
+    text-color:       rgba ( 34, 34, 34, 100 % );
+}
+element selected.normal {
+    background-color: rgba ( 85, 85, 85, 100 % );
+    text-color:       rgba ( 208, 208, 208, 100 % );
+}
+element selected.urgent {
+    background-color: rgba ( 249, 38, 114, 100 % );
+    text-color:       rgba ( 34, 34, 34, 100 % );
+}
+entry {
+    padding:          6px 10px ;
+    background-color: rgba ( 34, 34, 34, 100 % );
+    text-color:       rgba ( 208, 208, 208, 100 % );
+}
+inputbar {
+    background-color: rgba ( 34, 34, 34, 100 % );
+    spacing:          0px ;
+}
+listview {
+    padding:      1px 0px 0px ;
+    background:   rgba ( 34, 34, 34, 100 % );
+    dynamic:      true;
+    scrollbar:    false;
+    margin:       0px 0px 1px ;
+    spacing:      0px ;
+    fixed-height: false;
+}
+mainbox {
+    background-color: rgba ( 34, 34, 34, 100 % );
+    spacing:          0px ;
+    children:         [ "inputbar","message","mode-switcher","listview" ];
+}
+message {
+    padding:          6px 10px ;
+    background-color: rgba ( 34, 34, 34, 100 % );
+}
+mode-switcher {
+    background-color: rgba ( 34, 34, 34, 100 % );
+}
+prompt {
+    padding:          6px 9px ;
+    background-color: rgba ( 78, 180, 250, 100 % );
+    text-color:       rgba ( 34, 34, 34, 100 % );
+}
+scrollbar {
+    background-color: rgba ( 34, 34, 34, 100 % );
+    handle-width:     15px ;
+    handle-color:     rgba ( 85, 85, 85, 100 % );
+}
+textbox {
+    background-color: rgba ( 34, 34, 34, 100 % );
+    text-color:       rgba ( 85, 85, 85, 100 % );
+}
+window {
+    padding:          4px ;
+    background-color: rgba ( 34, 34, 34, 100 % );
+    anchor:           north;
+    location:         north;
+    border-color:     rgba ( 78, 180, 250, 100 % );
+    y-offset:         20.0000% ;
+    border:           3px ;
+}
